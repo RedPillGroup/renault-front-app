@@ -25,8 +25,8 @@ const Chat = () => {
     }, []);
 
     useEffect(() => {
-        const socket = io.connect('wss://d4x7znvuui.execute-api.eu-west-3.amazonaws.com', {
-            path: '/dev',
+        const socket = io.connect('wss://hyf10szwji.execute-api.eu-west-3.amazonaws.com', {
+            path: '/production',
             transport: ['websocket', 'polling']
         });
         socket.on('connect', () => {
